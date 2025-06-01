@@ -1,0 +1,44 @@
+:root {
+  --theme-primary: #00ff00;
+  --theme-background: #1a1a1a;
+  --theme-text: #00ff00;
+  --theme-glow: rgba(0, 255, 0, 0.2);
+  --theme-hover: rgba(0, 255, 0, 0.1);
+  --theme-border: #00ff00;
+}
+
+body {
+  margin: 0;
+  font-family: 'VT323', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--theme-primary);
+  color: var(--theme-background);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-primary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-hover);
+}
