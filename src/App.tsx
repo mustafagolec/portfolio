@@ -26,14 +26,6 @@ declare module 'styled-components' {
 // Add theme type
 type Language = 'en' | 'tr';
 
-interface ExpandIconProps {
-  isExpanded: boolean;
-}
-
-interface SectionContentProps {
-  isExpanded: boolean;
-}
-
 interface SettingsMenuProps {
   isOpen: boolean;
 }
@@ -494,10 +486,6 @@ const ContactLink = styled.a<{ theme: ColorTheme }>`
   }
 `;
 
-const ContactIcon = styled.span`
-  font-size: 1.2em;
-`;
-
 const ContactButton = styled.button<{ isCollapsed?: boolean; theme: ColorTheme; isActive?: boolean }>`
   width: ${props => props.isCollapsed ? '65px' : '65px'};
   height: ${props => props.isCollapsed ? '55px' : '65px'};
@@ -609,15 +597,6 @@ const CreditsText = styled.div`
   opacity: 0.6;
   margin-top: 10px;
   line-height: 1.4;
-`;
-
-const Footer = styled.div`
-  text-align: center;
-  color: ${({ theme }) => theme.text};
-  font-family: 'VT323', monospace;
-  font-size: 1.2em;
-  margin-top: 20px;
-  opacity: 0.8;
 `;
 
 const ExperienceItem = styled.div`
@@ -856,93 +835,6 @@ const MobileMenuContent = styled.div<{ isOpen: boolean }>`
     opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
     margin-top: ${({ isOpen }) => isOpen ? '5px' : '0'};
     gap: 5px;
-  }
-`;
-
-const ThemeButton = styled(ControlButton)<{ themeColor: keyof typeof themeColors }>`
-  border-color: ${({ theme }) => getThemeColors(theme).primary};
-  color: ${({ theme }) => getThemeColors(theme).primary};
-
-  &:hover {
-    background-color: ${({ theme }) => getThemeColors(theme).hover};
-  }
-
-  ${props => props.isActive && `
-    background-color: ${getThemeColors(props.theme).primary};
-    color: #1a1a1a;
-  `}
-`;
-
-const ThemeMenuContainer = styled.div`
-  position: relative;
-`;
-
-const ThemeToggle = styled(ControlButton)`
-  min-width: 140px;
-  justify-content: space-between;
-  
-  &::after {
-    content: '▼';
-    font-size: 0.8em;
-    transition: transform 0.3s ease;
-    ${props => props.isActive && `
-      transform: rotate(180deg);
-    `}
-  }
-`;
-
-const ThemeMenu = styled.div<SettingsMenuProps>`
-  position: absolute;
-  bottom: calc(100% + 10px);
-  left: 0;
-  background-color: #1a1a1a;
-  border: 2px solid #4a4a4a;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  opacity: ${({ isOpen }) => isOpen ? 1 : 0};
-  transform: translateY(${({ isOpen }) => isOpen ? '0' : '10px'});
-  pointer-events: ${({ isOpen }) => isOpen ? 'all' : 'none'};
-  z-index: 1001;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 255, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.1) 50%
-    );
-    background-size: 100% 4px;
-    pointer-events: none;
-  }
-`;
-
-const ThemeOption = styled.button<{ themeColor: keyof typeof themeColors }>`
-  width: 100%;
-  padding: 10px 15px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #4a4a4a;
-  color: ${({ theme }) => getThemeColors(theme).primary};
-  font-family: 'VT323', monospace;
-  font-size: 1.2em;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  &:hover {
-    background-color: ${({ theme }) => getThemeColors(theme).hover};
   }
 `;
 
