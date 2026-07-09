@@ -1127,28 +1127,21 @@ const translations: Record<Language, {
     };
   };
   projects: {
-    jobPlatform: {
+    brakePanic: {
       title: string;
       description: string;
       details: string;
       technologies: string;
       techList: string;
     };
-    bookPlatform: {
+    absSimulator: {
       title: string;
       description: string;
       details: string;
       technologies: string;
       techList: string;
     };
-    taskTracker: {
-      title: string;
-      description: string;
-      details: string;
-      technologies: string;
-      techList: string;
-    };
-    portfolio: {
+    gunfightSimulator: {
       title: string;
       description: string;
       details: string;
@@ -1173,7 +1166,7 @@ const translations: Record<Language, {
 }> = {
   en: {
     pageHeader: '[Click to expand the tabs]',
-    subtitle: 'Back-End Developer',
+    subtitle: 'Software Engineer',
     downloadCV: 'Download CV',
     copyright: '[2025 • Mustafa Golec]',
     credits: [
@@ -1197,21 +1190,11 @@ const translations: Record<Language, {
         title: 'CONTACT',
         items: []
       },
-      status: {
-        title: 'BIO',
-        items: [
-          'Hey! I\'m [Mustafa Göleç] — Back-End Developer.\nI\'m a passionate developer focused on building back-end systems using Node.js and related technologies. For me, it\'s not just about writing code — it\'s about creating clean, understandable, and practical solutions to real-world problems.',
-          'What I Do:\nBuild RESTful APIs with Node.js and Express.js\nUse MongoDB to store and manage data efficiently\nImplement authentication with JWT and Bcrypt\nTest and document APIs with Postman and Swagger\nKeep everything version-controlled with Git & GitHub',
-          'What I\'m Aiming For:\nSolve real problems through clean and modular code\nLearn constantly and grow with every project\nWork in collaborative environments where I can contribute and improve'
-        ]
-      },
       skills: {
         title: 'SKILLS',
         items: [
-          'Backend Development:\nNode.js, Express.js, MongoDB, RESTful APIs',
-          'Frontend Development:\nReact, JavaScript, HTML, CSS',
-          'Tools & Technologies:\nGit, GitHub, Postman, Swagger, Docker',
-          'Soft Skills:\nProblem Solving, Team Collaboration, Communication'
+          'Software:\nJavaScript, TypeScript, React, Node.js, Express.js, Three.js, ElectronJS, MongoDB, C#, HTML & CSS, Git & GitHub',
+          'Simulation:\nCarMaker / TruckMaker, Unity Engine, Blender (3D Modeling & Animation), Real-time Vehicle Dynamics Testing, Scenario & Maneuver Design'
         ]
       },
       experience: {
@@ -1263,15 +1246,13 @@ const translations: Record<Language, {
         role: 'Simulation and Software Engineer',
         location: 'Bursa, Türkiye',
         items: [
-          'Developing backend services for company websites and applications using Node.js',
-          'Creating interactive 3D animations for the company website using Three.js',
-          'Performing real-time vehicle driving and dynamic tests using Simulink-based CarMaker/TruckMaker software under various scenarios',
-          'Designing 3D vehicle and environment models for simulations using Blender',
-          'Designing testing environments for simulation purposes',
-          'Developing new maneuvers or transferring real-world test scenarios into virtual environments for simulation purposes',
-          'Preparing data reports, instructions, and user manuals related to simulation scenarios',
-          'Creating 3D animations of company projects for presentation at technology fairs',
-          'Implementing autonomous driving scenarios on the AWSIM project using ROS2 and Unity on Ubuntu'
+          'Front-end development of ABS System diagnostic interface software',
+          'Company website front-end development - tdkteknoloji.com.tr',
+          'Interactive 3D animations for the company website using Three.js',
+          'Performing real-time vehicle driving and dynamic tests with various scenarios using CarMaker/TruckMaker',
+          'Designing test environments using real datasets for simulations',
+          'Designing new maneuvers for simulations or transferring real scenarios to the test environment',
+          'Preparing 3D animation videos explaining company projects to be used at technology fairs'
         ]
       },
       turker: {
@@ -1298,33 +1279,26 @@ const translations: Record<Language, {
       }
     },
     projects: {
-      jobPlatform: {
-        title: 'Mini Job Listing Platform',
-        description: 'Job listing platform with user authentication and role-based access control',
-        details: 'This project is a lightweight job listing platform where users can register, log in, and apply for jobs. Employers can create companies and post job openings that users can browse and filter by location or category. The system includes role-based access control to differentiate between regular users and employers.',
-        technologies: 'Technologies:',
-        techList: 'Node.js, Express.js, MongoDB, JWT for authentication, Bcrypt for password hashing, HTML, Tailwind CSS, Vanilla JavaScript'
+      brakePanic: {
+        title: 'Brake Panic: Istanbul',
+        description: 'Unity Engine / C#',
+        details: 'A casual game set in iconic locations of Istanbul, where you control a runaway car with faulty brakes, navigating a downhill road while avoiding obstacles. I personally handled the interface design, 3D modeling, animations, and software development for this game project. It\'s been released on Google Play.',
+        technologies: 'Platform',
+        techList: 'Android / iOS'
       },
-      bookPlatform: {
-        title: 'Book Sharing and Review Platform',
-        description: 'Book sharing application with review and rating system',
-        details: 'A simple book sharing and review application that allows administrators to add, update, or delete books. Users can submit one review per book, including ratings and comments. The system calculates and displays the average rating for each book along with the number of reviews.',
-        technologies: 'Technologies:',
-        techList: 'Node.js, Express.js, MongoDB, Role-based access control, HTML, Tailwind CSS, Vanilla JavaScript'
+      absSimulator: {
+        title: 'Anti-Lock Braking System Simulator',
+        description: 'Unity Engine / C#',
+        details: 'ABS brake simulation for passenger cars and heavy vehicles, prepared for IDEF 2025. A simplified braking simulation application designed for users with or without knowledge of ABS braking systems.',
+        technologies: 'Platform',
+        techList: 'Windows'
       },
-      taskTracker: {
-        title: 'Task Tracker Application',
-        description: 'Task management system with status tracking and filtering',
-        details: 'This application allows users to create and manage their task lists with features such as adding tasks with titles, descriptions, and statuses (to-do, in-progress, done). Users can filter tasks based on their status, and the system can optionally track the history of task status changes.',
-        technologies: 'Technologies:',
-        techList: 'Node.js, Express.js, MongoDB, RESTful API design, HTML, Tailwind CSS, Vanilla JavaScript'
-      },
-      portfolio: {
-        title: 'Fallout Pip-Boy Inspired Portfolio',
-        description: 'Interactive portfolio website with retro-futuristic UI design',
-        details: 'A retro-futuristic personal portfolio website inspired by the iconic Pip-Boy interface from the Fallout game series. The project features an interactive terminal-style UI with CRT screen effects, expandable sections, and a responsive design that maintains the authentic Pip-Boy aesthetic while ensuring modern functionality. The interface includes animated scanlines, screen flicker effects, and a monochromatic green color scheme that recreates the classic terminal look.',
-        technologies: 'Technologies:',
-        techList: 'React, TypeScript, Styled Components, CSS Animations, HTML5, Responsive Design'
+      gunfightSimulator: {
+        title: 'Gunfight Simulator',
+        description: 'Unity Engine / C#',
+        details: 'A first-person shooter project featuring a realistic ballistic system, vehicle dynamics, and level design. Published on my Itch.io page.',
+        technologies: 'Platform',
+        techList: 'Windows'
       }
     },
     certificates: {
@@ -1344,7 +1318,7 @@ const translations: Record<Language, {
   },
   tr: {
     pageHeader: '[Sekmeleri genişletmek için tıklayın]',
-    subtitle: 'Back-End Developer',
+    subtitle: 'Yazılım Mühendisi',
     downloadCV: 'CV İndir',
     copyright: '[2025 • Mustafa Göleç]',
     credits: [
@@ -1368,21 +1342,11 @@ const translations: Record<Language, {
         title: 'İLETİŞİM',
         items: []
       },
-      status: {
-        title: 'HAKKIMDA',
-        items: [
-          'Merhaba! Ben Mustafa Göleç — Back-End Developer.\nNode.js ve ilgili teknolojileri kullanarak back-end sistemleri geliştirmeye odaklanmış tutkulu bir geliştiriciyim. Benim için sadece kod yazmak değil — gerçek dünya problemlerine temiz, anlaşılır ve pratik çözümler üretmek önemli.',
-          'Uzmanlık Alanlarım:\nNode.js ve Express.js ile performans odaklı RESTful API\'ler geliştiriyorum\nMongoDB ve Mongoose kullanarak esnek ve verimli veri modellemeleri oluşturuyorum.\nJWT (JSON Web Token) ve Bcrypt ile güvenli kimlik doğrulama ve yetkilendirme sistemleri kuruyorum.\nPostman ve Swagger kullanarak API\'leri test ediyor ve dökümantasyon süreçlerini yönetiyorum.\nGit ve GitHub ile versiyon kontrolü ve takım içi iş birliğini sürdürülebilir kılıyorum.',
-          'Hedeflerim:\nTemiz, okunabilir ve modüler kod yapıları ile yazılım çözümleri üretmek.\nHer projede yeni teknolojiler öğrenerek teknik yetkinliğimi artırmak.\nTakım çalışmasına yatkın, gelişime açık ve katma değer sağlayabileceğim profesyonel ortamlarda çalışmak.'
-        ]
-      },
       skills: {
         title: 'YETENEKLER',
         items: [
-          'Back-End Geliştirme:\nNode.js, Express.js, MongoDB, RESTful API\'ler',
-          'Front-End Geliştirme:\nReact, JavaScript, HTML, CSS',
-          'Araçlar & Teknolojiler:\nGit, GitHub, Postman, Swagger, Docker',
-          'Yumuşak Beceriler (Soft Skills):\nProblem Çözme, Takım Çalışması, İletişim'
+          'Yazılım:\nJavaScript, TypeScript, React, Node.js, Express.js, Three.js, ElectronJS, MongoDB, C#, HTML & CSS, Git & GitHub',
+          'Simülasyon:\nCarMaker / TruckMaker, Unity Engine, Blender (3D Modelleme & Animasyon), Gerçek Zamanlı Araç Dinamiği Testleri, Senaryo & Manevra Tasarımı'
         ]
       },
       experience: {
@@ -1434,15 +1398,13 @@ const translations: Record<Language, {
         role: 'Simülasyon ve Yazılım Mühendisi',
         location: 'Bursa, Türkiye',
         items: [
-          'Node.JS ile şirket web site ve uygulamaları için arka plan (Back-End) geliştirme',
-          'ThreeJS ile şirket web sitesi için 3 boyutlu interaktif animasyonlar hazırlanması',
-          'Simulink tabanlı CarMaker/TruckMaker yazılımı ile çeşitli senaryolarla gerçek zamanlı araç sürüş ve dinamik testlerin gerçekleştirilmesi',
-          'Blender ile simülasyonlar için 3D araç ve çevre modellerinin tasarlanması',
-          'Simülasyonlar için test ortamı tasarlama',
-          'Simülasyonlar için yeni manevralar tasarlanması veya gerçek test senaryoların sanal ortama aktarılması',
-          'Simülasyon senaryolarına yönelik veri raporları, talimat ve kullanım kılavuzlarının hazırlanması',
-          'Teknoloji fuarlarında gösterilmek üzere, şirket projelerinin 3D animasyonlarının hazırlanması',
-          'Ubuntu üzerinde ROS2 ve Unity kullanarak, AWSIM projesi üzerinde otonom sürüş senaryolarının gerçekleştirilmesi'
+          'ABS teşhis (diagnostik) arayüz yazılımının geliştirilmesi',
+          'Şirket web sitesi front-end geliştirmesi - tdkteknoloji.com.tr',
+          'ThreeJS kullanılarak şirket web sitesi için interaktif 3D animasyonlar',
+          'CarMaker/TruckMaker kullanılarak çeşitli senaryolarla gerçek zamanlı araç sürüş ve dinamik testlerinin gerçekleştirilmesi',
+          'Gerçek veri setleri kullanılarak simülasyon test ortamlarının tasarlanması',
+          'Simülasyonlar için yeni manevra senaryolarının tasarlanması ve gerçek senaryoların test ortamına aktarılması',
+          'Teknoloji fuarlarında kullanılmak üzere şirket projelerini anlatan 3D animasyon videolarının hazırlanması'
         ]
       },
       turker: {
@@ -1469,33 +1431,26 @@ const translations: Record<Language, {
       }
     },
     projects: {
-      jobPlatform: {
-        title: 'Mini İş İlanı Platformu',
-        description: 'Kullanıcı kimlik doğrulama ve rol tabanlı erişim kontrolü ile iş ilanı platformu',
-        details: 'Bu proje, kullanıcıların kayıt olup giriş yapabildiği ve iş başvurusu yapabildiği hafif bir iş ilanı platformudur. İşverenler şirket oluşturabilir ve iş ilanı yayınlayabilir. Kullanıcılar bu ilanları konum veya kategoriye göre filtreleyerek görüntüleyebilir. Sistem, normal kullanıcılar ile işverenleri ayırt etmek için rol tabanlı erişim kontrolü içerir.',
-        technologies: 'Kullanılan Teknolojiler:',
-        techList: 'Node.js, Express.js, MongoDB, Kimlik doğrulama için JWT, Şifreleme için Bcrypt, HTML, Tailwind CSS, Vanilla JavaScript'
+      brakePanic: {
+        title: 'Brake Panic: Istanbul',
+        description: 'Unity Engine / C#',
+        details: 'İstanbul\'un ikonik mekanlarında geçen, frenleri bozuk bir kontrolden çıkmış aracı kontrol ettiğiniz, yokuş aşağı bir yolda engellerden kaçınarak ilerlediğiniz casual oyun. Bu oyun projesinin UI tasarımı, 3D modellemesi, animasyonları ve yazılım geliştirmesi tarafımca yapılmıştır. Oyun Google Play\'de yayınlanmıştır.',
+        technologies: 'Platform',
+        techList: 'Android / iOS'
       },
-      bookPlatform: {
-        title: 'Kitap Paylaşım ve İnceleme Platformu',
-        description: 'İnceleme ve puanlama sistemi ile kitap paylaşım uygulaması',
-        details: 'Yöneticilerin kitap ekleyebildiği, güncelleyebildiği veya silebildiği basit bir kitap paylaşım ve inceleme uygulamasıdır. Kullanıcılar her kitap için bir inceleme gönderebilir; bu incelemeler puanlama ve yorum içerebilir. Sistem, her kitap için ortalama puanı ve toplam inceleme sayısını hesaplayarak gösterir.',
-        technologies: 'Kullanılan Teknolojiler:',
-        techList: 'Node.js, Express.js, MongoDB, Rol tabanlı erişim kontrolü, HTML, Tailwind CSS, Vanilla JavaScript'
+      absSimulator: {
+        title: 'Anti-Lock Braking System Simulator',
+        description: 'Unity Engine / C#',
+        details: 'IDEF 2025 için hazırlanan, binek otomobiller ve ağır vasıtalar için ABS fren simülasyonu. ABS fren sistemleri hakkında bilgi sahibi olan veya olmayan kullanıcılar için tasarlanmış basitleştirilmiş bir fren simülasyon uygulaması.',
+        technologies: 'Platform',
+        techList: 'Windows'
       },
-      taskTracker: {
-        title: 'Görev Takip Uygulaması',
-        description: 'Durum takibi ve filtreleme özellikli görev yönetim sistemi',
-        details: 'Bu uygulama, kullanıcıların başlık, açıklama ve durum (yapılacak, devam ediyor, tamamlandı) bilgileriyle görevler oluşturmasına ve yönetmesine olanak tanır. Kullanıcılar görevleri durumlarına göre filtreleyebilir ve sistem, isteğe bağlı olarak görev durum değişikliklerinin geçmişini takip edebilir.',
-        technologies: 'Kullanılan Teknolojiler:',
-        techList: 'Node.js, Express.js, MongoDB, RESTful API tasarımı, HTML, Tailwind CSS, Vanilla JavaScript'
-      },
-      portfolio: {
-        title: 'Fallout Pip-Boy Esinli Portfolyo',
-        description: 'Fallout oyunu Pip-Boy arayüzünden esinlenen retro-futuristik bir kişisel portfolyo websitesi',
-        details: 'Fallout oyun serisindeki ikonik Pip-Boy arayüzünden esinlenen retro-fütüristik bir kişisel portfolyo websitesidir. Proje, CRT ekran efektleriyle birlikte terminal tarzı etkileşimli bir kullanıcı arayüzü sunar. Genişletilebilir bölümler ve duyarlı tasarım ile otantik Pip-Boy estetiğini korurken modern işlevselliği sağlar. Arayüzde animasyonlu tarama çizgileri, ekran titreme efektleri ve klasik terminal görünümünü yansıtan monokromatik yeşil renk şeması bulunur.',
-        technologies: 'Kullanılan Teknolojiler:',
-        techList: 'React, TypeScript, Styled Components, CSS Animasyonları, HTML5, Duyarlı Tasarım'
+      gunfightSimulator: {
+        title: 'Gunfight Simulator',
+        description: 'Unity Engine / C#',
+        details: 'Gerçekçi balistik sistem, araç dinamikleri ve seviye tasarımına sahip birinci şahıs nişancı oyunu projesi. Itch.io sayfamda yayınlandı.',
+        technologies: 'Platform',
+        techList: 'Windows'
       }
     },
     certificates: {
@@ -1518,7 +1473,6 @@ const translations: Record<Language, {
 function App() {
   // Initialize state from localStorage or defaults
   const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
-    status: false,
     skills: false,
     experience: false,
     education: false,
@@ -1527,10 +1481,9 @@ function App() {
     contact: false,
     tdkt: false,
     turker: false,
-    'job-platform': false,
-    'book-platform': false,
-    'task-tracker': false,
-    'portfolio': false
+    'brake-panic': false,
+    'abs-simulator': false,
+    'gunfight-simulator': false
   });
 
   const [activeContact, setActiveContact] = useState<string | null>(null);
@@ -1751,10 +1704,6 @@ function App() {
         ] : [])
       ]
     },
-    status: {
-      title: translations[language].sections.status.title,
-      items: translations[language].sections.status.items
-    },
     skills: {
       title: translations[language].sections.skills.title,
       items: translations[language].sections.skills.items
@@ -1837,75 +1786,57 @@ function App() {
     projects: {
       title: translations[language].sections.projects.title,
       items: [
-        <ExperienceItem key="job-platform">
-          <ExperienceHeader onClick={() => toggleSection('job-platform')}>
+        <ExperienceItem key="brake-panic">
+          <ExperienceHeader onClick={() => toggleSection('brake-panic')}>
             <div>
-              <ExperienceTitle>{translations[language].projects.jobPlatform.title}</ExperienceTitle>
+              <ExperienceTitle>{translations[language].projects.brakePanic.title}</ExperienceTitle>
               <ExperienceDetails>
-                <div>{translations[language].projects.jobPlatform.description}</div>
+                <div>{translations[language].projects.brakePanic.description}</div>
               </ExperienceDetails>
             </div>
-            <ExpandIcon isExpanded={expandedSections['job-platform']}>▶</ExpandIcon>
+            <ExpandIcon isExpanded={expandedSections['brake-panic']}>▶</ExpandIcon>
           </ExperienceHeader>
-          <SectionContent isExpanded={expandedSections['job-platform']}>
+          <SectionContent isExpanded={expandedSections['brake-panic']}>
             <List>
-              <ListItem>{translations[language].projects.jobPlatform.details}</ListItem>
-              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.jobPlatform.technologies}</ListItem>
-              <ListItem>{translations[language].projects.jobPlatform.techList}</ListItem>
+              <ListItem>{translations[language].projects.brakePanic.details}</ListItem>
+              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.brakePanic.technologies}</ListItem>
+              <ListItem>{translations[language].projects.brakePanic.techList}</ListItem>
             </List>
           </SectionContent>
         </ExperienceItem>,
-        <ExperienceItem key="book-platform">
-          <ExperienceHeader onClick={() => toggleSection('book-platform')}>
+        <ExperienceItem key="abs-simulator">
+          <ExperienceHeader onClick={() => toggleSection('abs-simulator')}>
             <div>
-              <ExperienceTitle>{translations[language].projects.bookPlatform.title}</ExperienceTitle>
+              <ExperienceTitle>{translations[language].projects.absSimulator.title}</ExperienceTitle>
               <ExperienceDetails>
-                <div>{translations[language].projects.bookPlatform.description}</div>
+                <div>{translations[language].projects.absSimulator.description}</div>
               </ExperienceDetails>
             </div>
-            <ExpandIcon isExpanded={expandedSections['book-platform']}>▶</ExpandIcon>
+            <ExpandIcon isExpanded={expandedSections['abs-simulator']}>▶</ExpandIcon>
           </ExperienceHeader>
-          <SectionContent isExpanded={expandedSections['book-platform']}>
+          <SectionContent isExpanded={expandedSections['abs-simulator']}>
             <List>
-              <ListItem>{translations[language].projects.bookPlatform.details}</ListItem>
-              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.bookPlatform.technologies}</ListItem>
-              <ListItem>{translations[language].projects.bookPlatform.techList}</ListItem>
+              <ListItem>{translations[language].projects.absSimulator.details}</ListItem>
+              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.absSimulator.technologies}</ListItem>
+              <ListItem>{translations[language].projects.absSimulator.techList}</ListItem>
             </List>
           </SectionContent>
         </ExperienceItem>,
-        <ExperienceItem key="task-tracker">
-          <ExperienceHeader onClick={() => toggleSection('task-tracker')}>
+        <ExperienceItem key="gunfight-simulator">
+          <ExperienceHeader onClick={() => toggleSection('gunfight-simulator')}>
             <div>
-              <ExperienceTitle>{translations[language].projects.taskTracker.title}</ExperienceTitle>
+              <ExperienceTitle>{translations[language].projects.gunfightSimulator.title}</ExperienceTitle>
               <ExperienceDetails>
-                <div>{translations[language].projects.taskTracker.description}</div>
+                <div>{translations[language].projects.gunfightSimulator.description}</div>
               </ExperienceDetails>
             </div>
-            <ExpandIcon isExpanded={expandedSections['task-tracker']}>▶</ExpandIcon>
+            <ExpandIcon isExpanded={expandedSections['gunfight-simulator']}>▶</ExpandIcon>
           </ExperienceHeader>
-          <SectionContent isExpanded={expandedSections['task-tracker']}>
+          <SectionContent isExpanded={expandedSections['gunfight-simulator']}>
             <List>
-              <ListItem>{translations[language].projects.taskTracker.details}</ListItem>
-              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.taskTracker.technologies}</ListItem>
-              <ListItem>{translations[language].projects.taskTracker.techList}</ListItem>
-            </List>
-          </SectionContent>
-        </ExperienceItem>,
-        <ExperienceItem key="portfolio">
-          <ExperienceHeader onClick={() => toggleSection('portfolio')}>
-            <div>
-              <ExperienceTitle>{translations[language].projects.portfolio.title}</ExperienceTitle>
-              <ExperienceDetails>
-                <div>{translations[language].projects.portfolio.description}</div>
-              </ExperienceDetails>
-            </div>
-            <ExpandIcon isExpanded={expandedSections['portfolio']}>▶</ExpandIcon>
-          </ExperienceHeader>
-          <SectionContent isExpanded={expandedSections['portfolio']}>
-            <List>
-              <ListItem>{translations[language].projects.portfolio.details}</ListItem>
-              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.portfolio.technologies}</ListItem>
-              <ListItem>{translations[language].projects.portfolio.techList}</ListItem>
+              <ListItem>{translations[language].projects.gunfightSimulator.details}</ListItem>
+              <ListItem style={{ marginTop: '15px', fontWeight: 'bold' }}>{translations[language].projects.gunfightSimulator.technologies}</ListItem>
+              <ListItem>{translations[language].projects.gunfightSimulator.techList}</ListItem>
             </List>
           </SectionContent>
         </ExperienceItem>
